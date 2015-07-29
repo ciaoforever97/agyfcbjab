@@ -1,0 +1,42 @@
+.header {
+    /*background-color: red;*/
+    height: 100px;
+}
+.container {
+    /*background-color: green;*/
+
+}
+
+.row {
+     /*background-color: yellow;*/
+     height: 80px;
+    text-align: center ;
+    position: relative;
+border-bottom:  transparent 4px solid;
+ }
+
+.cell {
+      background-color: darkorange;
+      width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 80px;
+    vertical-align: middle;
+    color: white;
+    font-size: 40px;
+    font-family: Arial;
+  }
+.cell:hover{
+    background-color: yellowgreen;
+
+
+}
+
+
+
+body{
+    background-color: #222;
+    color: #999;
+}
