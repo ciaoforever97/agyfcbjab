@@ -66,8 +66,9 @@ window.addEventListener('load',function(){
             case 3: return y;
         }
     }
-
     function calcY(direction,x,y) {
+
+        if (direction<0) direction=4+direction;
         switch (direction){
             case 0: return y;
             case 1: return x;
@@ -87,6 +88,7 @@ window.addEventListener('load',function(){
            if (!vl) z.push(i);
         });
         if (!z.length) return false;
+
         var rp = z[random(z.length)-1];
         values[rp] = v;
         return true;
@@ -97,7 +99,9 @@ window.addEventListener('load',function(){
   function display () {
       for (var i = 0; i < values.length;i++){
           var txt = values[i] ? values[i] : '';
-          document.getElementById('c'+i).innerHTML = txt;
+          var cell=document.getElementById('c'+i);
+          cell.innerHTML=txt;
+          cell.className= txt ? "cell cell"+txt : "cell";
       }
   }
 
