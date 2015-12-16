@@ -112,6 +112,40 @@ border-bottom:  transparent 4px solid;
 }
 
 
+.restart{
+    text-align: center;
+    display: none;
+}
+.restart.active{
+    display: inherit;
+
+}
+.restart > p {
+    text-align: center;
+    font-family: sans-serif;
+    color: darkorange;
+    font-size: 28px;
+}
+.btn{
+    background-color: darkorange;
+    color: #111;
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 70px;
+    padding: 20px;
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    font-size: 31px;
+}
+.btn:hover{
+    background-color:blueviolet;
+}
+.btn:focus{
+    outline: none;
+}
+
+
 
 body{
     background-color: #222;
